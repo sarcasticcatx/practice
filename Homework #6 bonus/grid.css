@@ -87,7 +87,6 @@ body {
   grid-column: 3/7;
   grid-row: 10/15;
 }
-/* who invented grid i hope their pillow is alaways warm in the summer bye */
 .grid-intro .cell13 {
   background-color: lightgrey;
   grid-column: 7/10;
