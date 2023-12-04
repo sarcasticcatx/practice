@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://wallpapercave.com/wp/wp7823331.png),
+    url(https://clipart-library.com/images_k/black-and-white-flowers-transparent/black-and-white-flowers-transparent-4.png);
+  background-repeat: no-repeat;
+  background-position: right 100px top, left top 220px;
+  background-size: 500px;
+  background-color: rgb(114, 53, 130);
+}
+.rainbow {
+  font-size: 100px;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 0, 51),
+    rgb(211, 10, 208),
+    rgb(230, 0, 255),
+    pink,
+    rgb(238, 85, 238)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  cursor: pointer;
+}
+.rainbow:hover {
+  color: transparent;
+  transition: 500ms ease;
+}
+
+.box1 {
+  display: block;
+  margin: 50px;
+  padding: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.box1 a,
+ul {
+  list-style-type: none;
+  background-color: rgb(239, 62, 91);
+  text-decoration: none;
+}
+a:link {
+  color: rgb(92, 8, 8);
+}
+
+a:visited {
+  color: rgb(125, 51, 125);
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: rgb(92, 13, 34);
+}
+
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: "\2665";
+  color: #e216d4;
+}
