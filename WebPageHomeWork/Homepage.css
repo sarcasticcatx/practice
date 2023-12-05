@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* e tuka nemozham slikite da gi napraam responzivni poso se mi pomestuva u bodito */
 body {
   background-image: url(https://wallpapercave.com/wp/wp7823331.png),
     url(https://clipart-library.com/images_k/black-and-white-flowers-transparent/black-and-white-flowers-transparent-4.png);
@@ -35,7 +36,6 @@ body {
 }
 
 .box1 {
-  display: block;
   margin: 50px;
   padding: 50px;
   width: 50px;
@@ -45,15 +45,16 @@ body {
 .box1 a,
 ul {
   list-style-type: none;
-  background-color: rgb(239, 62, 91);
   text-decoration: none;
+  display: flex;
+  gap: 10px;
 }
 a:link {
   color: rgb(92, 8, 8);
 }
 
 a:visited {
-  color: rgb(125, 51, 125);
+  color: rgb(240, 13, 240);
 }
 
 a:hover {
@@ -71,4 +72,12 @@ ul {
 ul li:before {
   content: "\2665";
   color: #e216d4;
+}
+
+@media screen and (max-width: 800px) {
+  .left,
+  .main,
+  .right {
+    width: 100%;
+  }
 }
