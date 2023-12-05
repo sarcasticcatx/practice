@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Smooch&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aqua;
+}
+h1 {
+  font-size: 100px;
+  font-family: "Smooch", cursive;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 255, 174),
+    rgb(211, 10, 208),
+    rgb(0, 238, 255),
+    rgb(129, 113, 234),
+    rgb(238, 85, 238)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  cursor: pointer;
+}
+h1:hover {
+  color: transparent;
+  transition: 500ms ease;
+}
+.navs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+}
+.grid-box .aside-nav {
+  border: 10px solid rgb(81, 0, 139);
+  border-style: dotted;
+  border-radius: 1cm;
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+}
+p {
+  text-align: center;
+  margin: 30px;
+  color: palevioletred;
+}
+.tri {
+  width: 300px;
+  height: 300px;
+}
+.grid-box .midlle-nav {
+  /* border: 10px solid rgb(14, 29, 25);
+  border-style: dotted;
+  border-radius: 1cm; */
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.grid-box .end-nav {
+  border: 10px solid rgb(177, 54, 196);
+  border-style: dotted;
+  border-radius: 1cm;
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+  justify-content: end;
+  gap: 10px;
+}
+/* neznam od kaj dojde ovoj skrolov od strana i zoso iam tolku mesto dolu neznam kako da go trgnam */
+.pop {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  right: 100px;
+  bottom: 80px;
+}
+
+@media (max-width: 600px) {
+  .navs {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .pop {
+    position: relative;
+    right: 100px;
+    top: 30px;
+  }
+}
+@media (min-width: 600px) {
+  .navs {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  h1 {
+    font-size: 70px;
+  }
+  .pop {
+    position: relative;
+    right: 100px;
+    top: 30px;
+  }
+}
